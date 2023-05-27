@@ -1,0 +1,17 @@
+#1
+import random
+alunos = ['João', 'Maria', 'Pedro', 'Ana', 'Lucas', 'Laura', 'Carlos', 'Mariana', 'Paulo', 'Julia']
+for i in range(10)
+    medias = []
+    notas = []
+    print(f"Notas do aluno {alunos[i]}:")
+   
+    for j in range(4):
+        nota = float(input(f"Nota {j+1}: "))
+        notas.append(nota)
+    
+    media = sum(notas) / len(notas)
+    medias.append(media)
+alunos_aprovados = len([media for media in medias if media >= 7.0])
+print(f"Número de alunos com média maior ou igual a 7.0: {alunos_aprovados}")
+#2
