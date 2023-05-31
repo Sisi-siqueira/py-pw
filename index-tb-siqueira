@@ -15,3 +15,43 @@ for i in range(10)
 alunos_aprovados = len([media for media in medias if media >= 7.0])
 print(f"Número de alunos com média maior ou igual a 7.0: {alunos_aprovados}")
 #2
+idades = []
+
+alturas = []
+
+for i in range(5):
+
+    idade = int(input("Digite a idade da pessoa {}: ".format(i+1)))
+
+    altura = float(input("Digite a altura da pessoa {}: ".format(i+1)))
+
+    idades.append(idade)
+
+    alturas.append(altura)
+
+print("\nIdades e alturas na ordem inversa:")
+
+para i no intervalo (4, -1, -1):
+
+    print("Pessoa {}: Idade: {} | Altura: {}".format(i+1, idades[i], alturas[i]))
+    vetor = []
+
+# Leitura dos elementos do vetor
+
+for i in range(10):
+
+    num = int(input("Digite o número {}: ".format(i+1)))
+
+    vetor.append(num)
+
+# Cálculo da soma dos quadrados dos elementos
+
+soma_quadrados = 0
+
+for num in vetor:
+
+    soma_quadrados += num ** 2
+
+# Exibição do resultado
+
+print("A soma dos quadrados dos elementos do vetor é:", soma_quadrados)
