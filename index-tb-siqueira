@@ -90,3 +90,56 @@ for i in range(10):
 # Exibição do vetor 3
 
 print("\nVetor 3 (intercalado):", vetor3)
+# Função para intercalar os elementos dos três vetores
+
+def intercalar_vetores(vetor1, vetor2, vetor3):
+
+    vetor_intercalado = []
+
+    for i in range(len(vetor1)):
+
+        vetor_intercalado.append(vetor1[i])
+
+        vetor_intercalado.append(vetor2[i])
+
+        vetor_intercalado.append(vetor3[i])
+
+    return vetor_intercalado
+
+# Função para ler os elementos de um vetor
+
+def ler_vetor():
+
+    vetor = []
+
+    for i in range(10):
+
+        elemento = int(input(f"Digite o elemento {i+1}: "))
+
+        vetor.append(elemento)
+
+    return vetor
+
+# Ler os três vetores
+
+print("Digite os elementos do primeiro vetor:")
+
+vetor1 = ler_vetor()
+
+print("Digite os elementos do segundo vetor:")
+
+vetor2 = ler_vetor()
+
+print("Digite os elementos do terceiro vetor:")
+
+vetor3 = ler_vetor()
+
+# Gerar o vetor intercalado
+
+vetor_intercalado = intercalar_vetores(vetor1, vetor2, vetor3)
+
+# Imprimir o vetor intercalado
+
+print("Vetor intercalado:")
+
+print(vetor_intercalado)
