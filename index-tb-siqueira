@@ -55,3 +55,38 @@ for num in vetor:
 # Exibição do resultado
 
 print("A soma dos quadrados dos elementos do vetor é:", soma_quadrados)
+vetor1 = []
+
+vetor2 = []
+
+vetor3 = []
+
+# Leitura dos elementos dos vetores 1 e 2
+
+print("Digite os elementos do vetor 1:")
+
+for i in range(10):
+
+    num = int(input("Digite o número {}: ".format(i+1)))
+
+    vetor1.append(num)
+
+print("\nDigite os elementos do vetor 2:")
+
+for i in range(10):
+
+    num = int(input("Digite o número {}: ".format(i+1)))
+
+    vetor2.append(num)
+
+# Intercalação dos elementos nos vetor 3
+
+for i in range(10):
+
+    vetor3.append(vetor1[i])
+
+    vetor3.append(vetor2[i])
+
+# Exibição do vetor 3
+
+print("\nVetor 3 (intercalado):", vetor3)
